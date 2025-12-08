@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <!-- Круглая маска для обрезки изображения -->
+    <clipPath id="circleClip">
+      <circle cx="16" cy="16" r="16"/>
+    </clipPath>
+    
+    <!-- Градиент для рамки -->
+    <radialGradient id="borderGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#8B1538;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8B1538;stop-opacity:0.6" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Фоновый круг -->
+  <circle cx="16" cy="16" r="16" fill="#f8f9fa"/>
+  
+  <!-- Изображение обрезанное в круг -->
+  <image href="b0653d.jpg" x="0" y="0" width="32" height="32" clip-path="url(#circleClip)" />
+  
+  <!-- Декоративная рамка -->
+  <circle cx="16" cy="16" r="15.5" fill="none" stroke="url(#borderGradient)" stroke-width="1"/>
+  
+  <!-- Внешняя тонкая рамка -->
+  <circle cx="16" cy="16" r="15.8" fill="none" stroke="#8B1538" stroke-width="0.4" opacity="0.4"/>
+</svg>
